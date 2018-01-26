@@ -222,10 +222,10 @@ def validate_tuple(value, ndim):
     raise ValueError("List length should have same length as image dimensions.")
 
 
-try:
-    from IPython.core.display import clear_output
-except ImportError:
-    pass
+# try:
+#     from IPython.core.display import clear_output
+# except ImportError:
+#     pass
 
 
 def make_pandas_strict():
