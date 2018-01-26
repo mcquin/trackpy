@@ -254,13 +254,13 @@ formatter = logging.Formatter(FORMAT)
 
 # Check for IPython and use a special logger
 use_ipython_handler = False
-try:
-    import IPython
-except ImportError:
-    pass
-else:
-    if IPython.get_ipython() is not None:
-        use_ipython_handler = True
+# try:
+#     import IPython
+# except ImportError:
+#     pass
+# else:
+#     if IPython.get_ipython() is not None:
+#         use_ipython_handler = True
 if use_ipython_handler:
     default_handler = IPythonStreamHandler()
 else:
